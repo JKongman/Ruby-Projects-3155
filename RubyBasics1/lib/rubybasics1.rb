@@ -12,7 +12,19 @@ end
 # Part II
 def max_2_sum arr
   # YOUR CODE HERE
-end
+  def max_2_sum(array)
+  case array.length
+   when 0
+     return 0
+     when 1
+       return array.first
+     else
+       array.sort!
+       max = arr[-1] + arr[-2]
+       return max
+  end
+
+  
 
 # Part III
 def sum_to_n? arr, n
