@@ -34,7 +34,7 @@ def sum_to_n? arr, n
 if arr.empty?
     return false if n == 0
 else
-    arr.combination(2).to_a.each do |pair|
+    arr.combination(2).each do |pair|
         return true if sum(pair) == n
     end
 end
