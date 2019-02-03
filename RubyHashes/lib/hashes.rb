@@ -2,6 +2,15 @@
 # Part I
 def array_2_hash emails, contacts
     # YOUR CODE HERE
+    x = 0
+    if emails.length == 0
+        return contacts
+    end
+    contacts.each do |key, value|
+        contacts[key] = emails[x]
+        x+=1
+    end
+    return contacts
 end
 
 # Part II
