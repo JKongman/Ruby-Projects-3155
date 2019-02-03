@@ -25,7 +25,7 @@ end
 
 describe 'Ruby Hashes Part II' do
 
-  describe "array2d_2_hash", :disabled => true do
+  describe "array2d_2_hash"
     it "should be defined" do
       expect { array2d_2_hash([["bobsmith@example.com", "555-555-5555"],["sallyfield@example.com","111-111-1111"]], {'Bob Smith':{}, 'Sally Field':{}}) }.not_to raise_error
     end
@@ -40,7 +40,7 @@ describe 'Ruby Hashes Part II' do
       expect(array2d_2_hash([[]], {'Bob Smith':{}, 'Sally Field':{}})).to eq({:"Bob Smith"=>{}, :"Sally Field"=>{}})
     end
   end
-end
+
 
 describe 'Ruby Hashes Part III' do
 
