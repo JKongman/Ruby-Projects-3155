@@ -9,6 +9,16 @@ end
 # Part II
 def starts_with_consonant? s
   # YOUR CODE HERE
+ consonants = "bcdfghjklmnpqrstvwxyz".chars
+  if s.empty? == false
+    if consonants.include?(s[0].downcase)
+        return true
+    else
+        return false
+    end
+  else
+    return false
+  end
 end
 
 # Part III
