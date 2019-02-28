@@ -17,7 +17,7 @@ describe "#hello" do
   end
 end
 
-describe "#starts_with_consonant?"
+describe "#starts_with_consonant?" do
   it "should be defined" do
     expect { starts_with_consonant?("d") }.not_to raise_error()#::NoMethodError)
   end
@@ -38,10 +38,10 @@ describe "#starts_with_consonant?"
   end
   it 'works on nonletters [5 points]' , points: 5 do
     expect(starts_with_consonant?('#foo')).to be_falsy
-  end
+  end 
+end
 
-
-describe "#binary_multiple_of_4?", :disabled => true do
+describe "#binary_multiple_of_4?" do
   it "should be defined" do
     expect { binary_multiple_of_4?("yes") }.not_to raise_error()#::NoMethodError)
   end
